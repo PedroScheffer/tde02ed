@@ -6,6 +6,8 @@ import atv02.Livro;
 
 public class Main {
     public static void main(String[] args) {
+
+        //AQUI EU CRIO O PROFESSOR, ALUNOS E A TURMA
         Professor prof1 = new Professor();
         prof1.setNome("Prof. João");
         prof1.setEmail("joao@escola.com");
@@ -23,6 +25,7 @@ public class Main {
         turma1.setNome("Matemática");
         turma1.setProfessor(prof1);
 
+        //AQUI EU INSIRO OS ALUNOS NA TURMA E LOGO OS PROFESSORES E ALUNOS
         turma1.inserirAluno(aluno1);
         turma1.inserirAluno(aluno2);
 
@@ -32,12 +35,16 @@ public class Main {
 
         // ATIVIDADE 2
 
+
+        //AQUI EU CRIOS OS LIVROS E A LIVRARIA
         Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1200);
         Livro livro2 = new Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling", 300);
         Livro livro3 = new Livro("Dom Casmurro", "Machado de Assis", 256);
 
         Livraria livraria = new Livraria();
 
+
+        //AQUI EU INSIRO OS LIVROS NA LIVRARIA E LISTO OS LIVROS DISPONÍVEIS
         livraria.inserirLivro(livro1);
         livraria.inserirLivro(livro2);
         livraria.inserirLivro(livro3);
